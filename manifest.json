@@ -1,0 +1,15 @@
+{
+    "short_name": "RSP",
+    "name": "Réseau Social Privé",
+    "icons": [
+        {
+            "src": "icon.png",
+            "type": "image/png",
+            "sizes": "14x14"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#1c2730"
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Réseau Social Privé</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="manifest" href="manifest.json" />
+	<link rel="icon" type="image/x-icon" href="icon.png">
+	<link rel="stylesheet" href="/reseausocial/themes/reseausocial.min.css" />
+	<link rel="stylesheet" href="/reseausocial/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="/jq/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="/jq/demos/js/jquery.min.js"></script>
+	<script src="/jq/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body data-theme='b'>
+	<div data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1 class="ui-title" role="heading" aria-level="1"><img src="/reseausocial/icon.png"></h1>
+		</div>
+		<div id="ip">
+		<p style="text-align: center;"><b>127.0.0.1</b> : Mailbox</p><br>
+		</div>
+
+
+		<form autocomplete="off" action="/cgi-bin/reseausocial_message_externe.cgi" method="POST">
+			<div data-role="fieldcontain">
+				<label for="txt-emetteur">De :</label>
+				<input type="text" name="txt-emetteur">
+			</div>
+			<div data-role="fieldcontain">
+				<label for="txt-destinataire">A :</label>
+				<input type="text" name="txt-destinataire">
+			</div>
+			<div data-role="fieldcontain">
+				<label for="txt-text">Message textuel :</label>
+				<textarea type="text" name="txt-text"></textarea>
+
+				<label for="txt-lien">Lien :</label>
+				<input type="text" name="txt-lien">
+
+				<label for="txt-img">Lien d'une image :</label>
+				<input type="text" name="txt-img">
+
+				<label for="txt-yt">Lien d'un embed YouTube :</label>
+				<input type="text" name="txt-yt">
+
+				<label for="txt-dm">Lien d'un embed DailyMotion :</label>
+				<input type="text" name="txt-dm">
+
+				<label for="txt-autre">Lien d'un autre embed :</label>
+				<input type="text" name="txt-autre">
+			</div>
+			<button type="submit" data-mini='false' data-inline='false' data-icon="arrow-r">Envoyer le message</button>
+			</form>
+	<div data-role="footer" data-position="fixed" data-theme="b" role="contentinfo" class="ui-footer ui-footer-fixed slideup">
+			<div data-role="navbar" class="ui-navbar" role="navigation">
+			<ul class="ui-grid-c">
+               <li class="ui-block-a">
+					<h4 style="text-align: center;">Réseau Social v1.1</h4>
+				</li>
+			</ul>
+			</div>
+		</div>
+
+</body>
+</html>

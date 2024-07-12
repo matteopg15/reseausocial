@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Réseau Social Privé</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" type="image/x-icon" href="icon.png">
+<link rel="stylesheet" href="/reseausocial/themes/reseausocial.min.css" />
+<link rel="stylesheet" href="/reseausocial/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="/jq/jquery.mobile.structure-1.4.5.min.css" />
+<script src="/jq/demos/js/jquery.min.js"></script>
+<script src="/jq/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body data-theme='b'>
+	<div data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li>
+						<img src="icon.png" >
+						</form>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+
+
+
+		<form autocomplete='off' action="/cgi-bin/reseausocial_creer_compte.cgi" method="POST">
+		<div data-role='fieldcontain'>
+			<label for='txt-login'>Login : </label>
+			<input type='text' name="txt-login" id='txt-login' maxlength="10" required="required" placeholder="Login">
+		</div>
+      	<br><br>
+      	<legend>Choix du genre :</legend>
+
+         <div class="ui-radio"><label for="radio-choice-1" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on ui-first-child">Homme</label><input type="radio" name="radio-choice" id="radio-choice-1" value="homme" checked="checked"></div>
+         	
+         <div class="ui-radio"><label for="radio-choice-2" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off ui-last-child">Femme</label><input type="radio" name="radio-choice" id="radio-choice-2" value="femme"></div>
+         
+         <br><br>
+      	
+		<div data-role='fieldcontain'>
+			<label for='txt-password'>Mot de passe : </label>
+			<input type='password' name="txt-password" id='txt-password' maxlength="10" required="required" placeholder="Mot de passe">
+		</div>
+		<div data-role='fieldcontain'>
+			<label for='txt-password2'>Confirmer le mot de passe : </label>
+			<input type='password' name="txt-password2" id='txt-password2' maxlength="10" required="required" placeholder="Confirmation mot de passe">
+		</div>
+		<button type="submit" data-mini='false' data-inline='false' data-icon="lock">Créer un compte</button>
+		</form>
+	</div>
+</body>
+</html>

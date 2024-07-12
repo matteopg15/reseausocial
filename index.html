@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Réseau Social Privé</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" type="image/x-icon" href="icon.png">
+<link rel="stylesheet" href="/reseausocial/themes/reseausocial.min.css" />
+<link rel="stylesheet" href="/reseausocial/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="/jq/jquery.mobile.structure-1.4.5.min.css" />
+<script src="/jq/demos/js/jquery.min.js"></script>
+<script src="/jq/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body data-theme='b'>
+	<div data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<h1 class="ui-title" role="heading" aria-level="1"><img src="/reseausocial/icon.png"></h1>
+		</div>
+
+
+
+
+
+		<form autocomplete='off' action="/cgi-bin/reseausocial_checktotp.cgi" method="POST">
+		<div data-role='fieldcontain'>
+			<label for='txt-login'>Login : </label>
+			<input type='text' name="txt-login" id='txt-login' maxlength="10" required="required" placeholder="Login">
+		</div>
+		<div data-role='fieldcontain'>
+			<label for='txt-password'>Mot de passe : </label>
+			<input type='password' name="txt-password" id='txt-password' maxlength="10" required="required" placeholder="Mot de passe">
+		</div>
+		<button type="submit" data-mini='false' data-inline='true' data-icon="lock">Se connecter</button>
+		</form>
+
+		<hr><br>
+		<a href="creer_compte.html"><button type="submit" data-mini='false' data-inline='true' data-icon="plus">Créer un compte</button></a>
+		<a href="message_externe.html"><img src="/reseausocial/enveloppe.png" style="display: block; margin-left: auto; margin-right: auto; margin-top: 25px; width: 15%;"></a>
+		<div data-role="footer" data-position="fixed" data-theme="b" role="contentinfo" class="ui-footer ui-footer-fixed slideup">
+			<div data-role="navbar" class="ui-navbar" role="navigation">
+			<ul class="ui-grid-c">
+               <li class="ui-block-a">
+					<h4 style="text-align: center;">Réseau Social v1.1</h4>
+				</li>
+			</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
