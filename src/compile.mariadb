@@ -1,0 +1,92 @@
+#!/bin/sh
+gcc -Wall reseausocial_checktotp.c -o reseausocial_checktotp.cgi -lmariadb
+cp reseausocial_checktotp.cgi /usr/lib/cgi-bin/reseausocial_checktotp.cgi
+
+gcc -Wall reseausocial_principale.c -o reseausocial_principale.cgi -lmariadb
+cp reseausocial_principale.cgi /usr/lib/cgi-bin/reseausocial_principale.cgi
+
+gcc -Wall reseausocial_saisir_nom.c -o reseausocial_saisir_nom.cgi -lmariadb
+cp reseausocial_saisir_nom.cgi /usr/lib/cgi-bin/reseausocial_saisir_nom.cgi
+
+gcc -Wall reseausocial_nv_salon.c -o reseausocial_nv_salon.cgi -lmariadb
+cp reseausocial_nv_salon.cgi /usr/lib/cgi-bin/reseausocial_nv_salon.cgi
+
+gcc -Wall reseausocial_creer_compte.c -o reseausocial_creer_compte.cgi -lmariadb
+cp reseausocial_creer_compte.cgi /usr/lib/cgi-bin/reseausocial_creer_compte.cgi
+
+gcc -Wall reseausocial_profil.c -o reseausocial_profil.cgi -lmariadb
+cp reseausocial_profil.cgi /usr/lib/cgi-bin/reseausocial_profil.cgi
+
+gcc -Wall reseausocial_appliquer_avatar.c -o reseausocial_appliquer_avatar.cgi -lmariadb
+cp reseausocial_appliquer_avatar.cgi /usr/lib/cgi-bin/reseausocial_appliquer_avatar.cgi
+
+gcc -Wall reseausocial_changer_mdp.c -o reseausocial_changer_mdp.cgi -lmariadb
+cp reseausocial_changer_mdp.cgi /usr/lib/cgi-bin/reseausocial_changer_mdp.cgi
+
+gcc -Wall reseausocial_activer_2FA.c -o reseausocial_activer_2FA.cgi -lmariadb
+cp reseausocial_activer_2FA.cgi /usr/lib/cgi-bin/reseausocial_activer_2FA.cgi
+
+gcc -Wall reseausocial_desactiver_2FA.c -o reseausocial_desactiver_2FA.cgi -lmariadb
+cp reseausocial_desactiver_2FA.cgi /usr/lib/cgi-bin/reseausocial_desactiver_2FA.cgi
+
+gcc -Wall reseausocial_reglage_admin.c -o reseausocial_reglage_admin.cgi -lmariadb
+cp reseausocial_reglage_admin.cgi /usr/lib/cgi-bin/reseausocial_reglage_admin.cgi
+
+gcc -Wall reseausocial_activer_compte.c -o reseausocial_activer_compte.cgi -lmariadb
+cp reseausocial_activer_compte.cgi /usr/lib/cgi-bin/reseausocial_activer_compte.cgi
+
+gcc -Wall reseausocial_desactiver_compte.c -o reseausocial_desactiver_compte.cgi -lmariadb
+cp reseausocial_desactiver_compte.cgi /usr/lib/cgi-bin/reseausocial_desactiver_compte.cgi
+
+gcc -Wall reseausocial_afficher_salon.c -o reseausocial_afficher_salon.cgi -lmariadb
+cp reseausocial_afficher_salon.cgi /usr/lib/cgi-bin/reseausocial_afficher_salon.cgi
+
+gcc -Wall reseausocial_liste_membres.c -o reseausocial_liste_membres.cgi -lmariadb
+cp reseausocial_liste_membres.cgi /usr/lib/cgi-bin/reseausocial_liste_membres.cgi
+
+gcc -Wall reseausocial_confirmation_quitter.c -o reseausocial_confirmation_quitter.cgi -lmariadb
+cp reseausocial_confirmation_quitter.cgi /usr/lib/cgi-bin/reseausocial_confirmation_quitter.cgi
+
+gcc -Wall reseausocial_quitter_salon.c -o reseausocial_quitter_salon.cgi -lmariadb
+cp reseausocial_quitter_salon.cgi /usr/lib/cgi-bin/reseausocial_quitter_salon.cgi
+
+gcc -Wall reseausocial_marquer_tout_lu.c -o reseausocial_marquer_tout_lu.cgi -lmariadb
+cp reseausocial_marquer_tout_lu.cgi /usr/lib/cgi-bin/reseausocial_marquer_tout_lu.cgi
+
+gcc -Wall reseausocial_gerer_salon.c -o reseausocial_gerer_salon.cgi -lmariadb
+cp reseausocial_gerer_salon.cgi /usr/lib/cgi-bin/reseausocial_gerer_salon.cgi
+
+gcc -Wall reseausocial_supprimer_membre.c -o reseausocial_supprimer_membre.cgi -lmariadb
+cp reseausocial_supprimer_membre.cgi /usr/lib/cgi-bin/reseausocial_supprimer_membre.cgi
+
+gcc -Wall reseausocial_supprimer_salon.c -o reseausocial_supprimer_salon.cgi -lmariadb
+cp reseausocial_supprimer_salon.cgi /usr/lib/cgi-bin/reseausocial_supprimer_salon.cgi
+
+gcc -Wall reseausocial_supprimer_message.c -o reseausocial_supprimer_message.cgi -lmariadb
+cp reseausocial_supprimer_message.cgi /usr/lib/cgi-bin/reseausocial_supprimer_message.cgi
+
+gcc -Wall reseausocial_page_poster.c -o reseausocial_page_poster.cgi -lmariadb
+cp reseausocial_page_poster.cgi /usr/lib/cgi-bin/reseausocial_page_poster.cgi
+
+gcc -Wall reseausocial_poster.c -o reseausocial_poster.cgi -lmariadb
+cp reseausocial_poster.cgi /usr/lib/cgi-bin/reseausocial_poster.cgi
+
+gcc -Wall reseausocial_ajouter_membre.c -o reseausocial_ajouter_membre.cgi -lmariadb
+cp reseausocial_ajouter_membre.cgi /usr/lib/cgi-bin/reseausocial_ajouter_membre.cgi
+
+gcc -Wall reseausocial_effacer.c -o reseausocial_effacer.cgi -lmariadb
+cp reseausocial_effacer.cgi /usr/lib/cgi-bin/reseausocial_effacer.cgi
+
+gcc -Wall reseausocial_iframe_lien.c -o reseausocial_iframe_lien.cgi -lmariadb
+cp reseausocial_iframe_lien.cgi /usr/lib/cgi-bin/reseausocial_iframe_lien.cgi
+
+gcc -Wall reseausocial_message_externe.c -o reseausocial_message_externe.cgi -lmariadb
+cp reseausocial_message_externe.cgi /usr/lib/cgi-bin/reseausocial_message_externe.cgi
+
+gcc -Wall reseausocial_redirection.c -o reseausocial_redirection.cgi -lmariadb
+cp reseausocial_redirection.cgi /usr/lib/cgi-bin/reseausocial_redirection.cgi
+
+gcc -Wall reseausocial_statistiques.c -o reseausocial_statistiques.cgi -lmariadb
+cp reseausocial_statistiques.cgi /usr/lib/cgi-bin/reseausocial_statistiques.cgi
+
+rm *.cgi

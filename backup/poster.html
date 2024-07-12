@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Réseau Social Privé</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="manifest" href="manifest.json" />
+	<link rel="icon" type="image/x-icon" href="icon.png">
+	<link rel="stylesheet" href="/reseausocial/themes/reseausocial.min.css" />
+	<link rel="stylesheet" href="/reseausocial/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="/jq/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="/jq/demos/js/jquery.min.js"></script>
+	<script src="/jq/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body data-theme='b'>
+	<div data-role="page" data-theme="b">
+		<form autocomplete=false action='/cgi-bin/reseausocial_marquer_tout_lu.cgi' method='POST'>
+		<input type="hidden" name="txt-login" id="txt-login" value="%s">
+		<input type="hidden" name="txt-mdp" id="txt-mdp" value="%s">
+		<input type="hidden" name="txt-code" id="txt-code" value="%s">
+		<input type="hidden" name="txt-salon" id="txt-salon" value="%s">
+		<input type="hidden" name="txt-gerant" id="txt-gerant" value="%s">
+      	
+		<div data-role="fieldcontain" class="ui-field-contain">
+
+			<label for="txt-text">Message textuel : </label>
+         	<textarea type="text" name="txt-text" id="txt-text" value=""></textarea>
+         	
+      	</div>
+      	<div data-role="fieldcontain" class="ui-field-contain">
+      		<label for="txt-lien">Lien : </label>
+         	<input type="text" name="txt-lien" id="txt-lien" value="">
+        </div>
+      	<div data-role="fieldcontain" class="ui-field-contain">
+      		<label for="txt-img">Lien d'une image : </label>
+         	<input type="text" name="txt-img" id="txt-img" value="">
+         </div>
+         <div data-role="fieldcontain" class="ui-field-contain">
+      		<label for="txt-yt">Lien d'un embed YouTube : </label>
+         	<input type="text" name="txt-yt" id="txt-yt" value="">
+         </div>
+         <div data-role="fieldcontain" class="ui-field-contain">
+      		<label for="txt-dm">Lien d'un embed DailyMotion : </label>
+         	<input type="text" name="txt-dm" id="txt-dm" value="">
+         </div>
+         <div data-role="fieldcontain" class="ui-field-contain">
+      		<label for="txt-dm">Lien d'un autre embed </label>
+         	<input type="text" name="txt-autre" id="txt-autre" value="">
+         </div>
+         <button type="submit" data-mini="false" data-inline="false" data-icon="check" class="ui-shadow ui-btn ui-btn-b ui-icon-check ui-btn-icon-left">Envoyer</button>
+
+         <div data-role="footer" data-position="fixed" data-theme="b" role="contentinfo" class="ui-footer ui-bar-b ui-footer-fixed slideup">
+			<div data-role="navbar" class="ui-navbar" role="navigation">
+			<ul class="ui-grid-c">
+               <li class="ui-block-a">
+                  	<button type="submit" data-mini="false" data-inline="false" data-icon="back" class="ui-shadow ui-btn ui-btn-b ui-icon-back ui-btn-icon-top"></button>
+				  </form>
+				</li>
+			</ul>
+			</div></div>
+	</div>
+</body>
+</html>

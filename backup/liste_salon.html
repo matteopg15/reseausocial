@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Réseau Social Privé</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" type="image/x-icon" href="icon.png">
+<link rel="stylesheet" href="/reseausocial/themes/reseausocial.min.css" />
+<link rel="stylesheet" href="/reseausocial/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="/jq/jquery.mobile.structure-1.4.5.min.css" />
+<script src="/jq/demos/js/jquery.min.js"></script>
+<script src="/jq/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li>
+						<form autocomplete=false action='/cgi-bin/test.cgi'>
+						<button type='submit' data-mini='false' data-iniline='false' data-theme='b' data-icon="plus" class='ui-shadow'></button>
+						</form>
+					</li>
+					<li>
+						<form autocomplete=false action='/cgi-bin/test.cgi'>
+						<button type='submit' data-mini='false' data-iniline='false' data-theme='b' data-icon="refresh" class='ui-shadow'></button>
+						</form>
+					</li>
+					<li>
+						<form autocomplete=false action='/cgi-bin/test.cgi'>
+						<button type='submit' data-mini='false' data-iniline='false' data-theme='b' data-icon="user" class='ui-shadow'></button>
+						</form>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<form autocomplete=false action='/cgi-bin/test.cgi'>
+		<button class="ui-btn ui-btn-inline ui-icon-gear ui-btn-icon-right ui-btn-c">Réglages</button>
+		</form>
+		<br><br><hr>
+		<h3 style="text-align: center;">Mes salons</h3>
+		<hr>
+		<!LISTE DES SALONS QUI M'APPARTIENNENT>
+		<form method='POST' autocomplete='off' action="reseausocial_acceder_salon.cgi">
+			<button type='submit' data-mini='false' data-iniline='true' data-theme='b' data-icon="comment" class='ui-shadow'>Nom Salon [Proprio]</button>
+			<input type="hidden" name="txt-salon" id="txt-code" value="Nom Salon">
+			<input type="hidden" name="txt-gerant" id="txt-code" value="Proprio">
+		</form>
+		<br><br><hr>
+		<h3 style="text-align: center;">Les salons dont je suis membre</h3>
+		<hr>
+		<!LISTE DES SALONS AUXQUELS J'APPARTIENS>
+		<form method='POST' autocomplete='off' action="reseausocial_acceder_salon.cgi">
+			<button type='submit' data-mini='false' data-iniline='true' data-theme='b' data-icon="comment" class='ui-shadow'>Nom Salon [Proprio]</button>
+			<input type="hidden" name="txt-salon" id="txt-code" value="Nom Salon">
+			<input type="hidden" name="txt-gerant" id="txt-code" value="Proprio">
+		</form>
+	</div>
+</body>
+</html>

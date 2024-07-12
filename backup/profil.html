@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Réseau Social Privé</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="manifest" href="manifest.json" />
+	<link rel="icon" type="image/x-icon" href="icon.png">
+	<link rel="stylesheet" href="/reseausocial/themes/reseausocial.min.css" />
+	<link rel="stylesheet" href="/reseausocial/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="/jq/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="/jq/demos/js/jquery.min.js"></script>
+	<script src="/jq/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body data-theme='b'>
+	<div data-role="page" data-theme="b">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li>
+						<form autocomplete=false action='/cgi-bin/reseausocial_principale.cgi'>
+						<button type='submit' data-mini='false' data-iniline='false' data-theme='b' data-icon="forward" class='ui-shadow'></button>
+						</form>
+					</li>
+				</ul>
+			</div>
+		</div>
+	<img src="/reseausocial/homme.png" align="center" style='display: block; margin-left: auto; margin-right: auto; width: 12%'>
+	<br><br>
+
+	<form autocomplete='off' action="/cgi-bin/reseausocial_appliquer_avatar.cgi" method="POST">
+	<div data-role='fieldcontain'>
+		<label for=''>URL de l'avatar : </label>
+		<input type="text" name="text-url" id="text-url", value='/reseausocial/homme.png'>
+	</div>
+	<button type="submit" data-mini='false' data-inline='false' data-icon="user">Appliquer l'avatar</button>
+	</form>
+
+	<form autocomplete='off' action="/cgi-bin/reseausocial_appliquer_avatar.cgi" method="POST">
+	<div data-role='fieldcontain'>
+		<label for=''>Mot de passe actuel : </label>
+		<input type="text" name="text-ancien-mdp" id="text-url">
+		<label for=''>Nouveau mot de passe : </label>
+		<input type="text" name="text-nv-mdp" id="text-url">
+		<label for=''>Confirmer le mot de passe actuel : </label>
+		<input type="text" name="text-nv-mdp2" id="text-url">
+	</div>
+	<button type="submit" data-mini='false' data-inline='false' data-icon="lock">Changer le mot de passe</button>
+	</form>
+	</div>
+</body>
+</html>

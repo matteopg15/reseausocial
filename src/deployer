@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "Copie de la Base de donnée..."
+mysqldump -u reseausocial -p reseausocial > /home/matteo/reseausocial/build/bdd$(date '+%Y-%m-%d-%H:%M:%S').sql 
+echo "Copie des fichiers vers le Raspbery PI"
+scp -r /home/matteo/reseausocial/* pi@192.168.0.249:/home/pi/reseausocial
